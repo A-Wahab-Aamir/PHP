@@ -29,8 +29,9 @@
 
 <?php 
 // view (see all records)
-$conn = mysqli_connect('localhost', "root", "" ,"aptech");
-$sql="SELECT * FROM students";
+$text= $_GET['search_text'];
+$conn = mysqli_connect('localhost', "id21905571_muzammil", "Muzz@123" ,"id21905571_aptech");
+$sql="SELECT * FROM students WHERE name like '$text%' ";
 $res = mysqli_query($conn, $sql);
 if(mysqli_num_rows($res) > 0 ){
 ?>
@@ -86,6 +87,10 @@ while($row=mysqli_fetch_assoc($res)){
 
 <?php 
 
+}
+else{
+
+    echo "<h1 class='text-center text-dark'>No Record Found! </h1>";
 }
 
 ?>
