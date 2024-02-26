@@ -19,7 +19,8 @@ function mul(){
 mul();
 echo "<br>Outside Function: ".$num2; 
 ?>
- ```  
+ ```
+> [!NOTE]
 > OUTPUT
 > ![image](https://github.com/A-Wahab-Aamir/PHP/assets/83786802/691619b5-c460-47eb-bd25-346e3fc07825)
 
@@ -40,11 +41,12 @@ mul();
 echo "<br>Outside Function: ".$num2; 
 ?>
 ```
+> [!NOTE]
 > OUTPUT
 > ![image](https://github.com/A-Wahab-Aamir/PHP/assets/83786802/2507cfac-fae7-44cc-8a93-10d6aacf8fde)
 
 
-
+> STATIC
 ```
 <?php 
 // declaring variable
@@ -59,11 +61,22 @@ sum();
 echo "<br>Outside Function: ".$num2; 
 ?>
 ```
-
+> [!NOTE]
 > OUTPUT
 > ![image](https://github.com/A-Wahab-Aamir/PHP/assets/83786802/dabd2c7d-0853-4af4-b7c0-aa942dd173bc)
 
 
+```
+<?php 
+echo "Server Software: ".$_SERVER['SERVER_SOFTWARE'].'<br>';
+echo "Server Name: ".$_SERVER['SERVER_NAME'].'<br>';
+echo "Server Protocol: ".$_SERVER['SERVER_PROTOCOL'].'<br>';
+echo "Server Port: ".$_SERVER['SERVER_PORT'].'<br>';
+?>
+```
+> [!NOTE]
+> OUTPUT
+> ![image](https://github.com/A-Wahab-Aamir/PHP/assets/83786802/5d578bb4-1a5f-4c68-aab4-5c33fd3395a7)
 
 
 
