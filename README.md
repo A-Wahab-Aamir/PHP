@@ -21,7 +21,7 @@ echo "<br>Outside Function: ".$num2;
 ?>
  ```  
 > OUTPUT
-![image](https://github.com/A-Wahab-Aamir/PHP/assets/83786802/691619b5-c460-47eb-bd25-346e3fc07825)
+> ![image](https://github.com/A-Wahab-Aamir/PHP/assets/83786802/691619b5-c460-47eb-bd25-346e3fc07825)
 
 > GLOBAL
 ```
@@ -41,10 +41,27 @@ echo "<br>Outside Function: ".$num2;
 ?>
 ```
 > OUTPUT
-![image](https://github.com/A-Wahab-Aamir/PHP/assets/83786802/2507cfac-fae7-44cc-8a93-10d6aacf8fde)
+> ![image](https://github.com/A-Wahab-Aamir/PHP/assets/83786802/2507cfac-fae7-44cc-8a93-10d6aacf8fde)
 
 
 
+```
+<?php 
+// declaring variable
+$num1;
+function sum(){
+    // static var (scope inside the function)
+    static $num1=4;
+    $num2=$num1 + 2;
+    echo "Inside Function: ".$num2;
+}
+sum();
+echo "<br>Outside Function: ".$num2; 
+?>
+```
+
+> OUTPUT
+> ![image](https://github.com/A-Wahab-Aamir/PHP/assets/83786802/dabd2c7d-0853-4af4-b7c0-aa942dd173bc)
 
 
 
