@@ -65,7 +65,7 @@ echo "<br>Outside Function: ".$num2;
 > OUTPUT
 > ![image](https://github.com/A-Wahab-Aamir/PHP/assets/83786802/dabd2c7d-0853-4af4-b7c0-aa942dd173bc)
 
-
+> HTTP ENVIRONMENTAL VARIABLES
 ```
 <?php 
 echo "Server Software: ".$_SERVER['SERVER_SOFTWARE'].'<br>';
