@@ -1,0 +1,15 @@
+PHP INI
+SMTP=smtp.gmail.com
+smtp_port=25
+sendmail_from = abdulwahabamir4@gmail.com
+sendmail_path ="\"C:\xampp\sendmail\sendmail.exe\" -t"
+
+SEND MAIL INI
+
+smtp_server=smtp.gmail.com
+smtp_port=25
+error_logfile=error.log
+debug_logfile=debug.log
+auth_username=abdulwahabamir4@gmail.com (your email send email)
+auth_password=your two step verf passwrod (app password)
+force_sender=abdulwahabamir4@gmail.com (your email send email)
