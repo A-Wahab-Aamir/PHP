@@ -1,3 +1,38 @@
+<?php 
+class person{
+    public $name;
+
+    function Show(){
+        echo "your name is: ".$this->name; 
+    }
+}
+$p1= new person();
+$p1->name= "abdul wahab amir";
+$p1->show(); 
+?>
+---------------------------------------------------------------------------
+<?php 
+class fruits{
+    public $name; 
+    public $color; 
+
+    function set_name($name){
+        $this->name = $name ; 
+
+    }
+    function set_color($color){
+        $this->color= $color ;
+
+    }
+    function get_name(){
+        return $this->name; 
+    }
+} 
+$apple = new fruits(); 
+$apple->set_name("Apple");
+$apple->set_color("Red"); 
+echo $apple->get_name(); 
+?>
 ----------------------------------------------------------------------------
 <?php
 class Fruit {
@@ -20,3 +55,4 @@ class Fruit {
   }
 }
 ?>
+------------------------------------------------------------------------------------
