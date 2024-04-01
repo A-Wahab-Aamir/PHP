@@ -1,0 +1,8 @@
+Write a PHP script to display the following strings.
+Sample String :
+'Tomorrow I \'ll learn PHP global variables.'
+'This is a bad command : del c:\\*.*'
+
+Write a PHP program to compute the sum of the two given integer values. If the two values are the same, then returns triple their sum.
+
+ Create a simple HTML form and accept the user name and display the name through PHP echo statement.
