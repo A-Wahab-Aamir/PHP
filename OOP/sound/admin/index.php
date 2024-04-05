@@ -23,7 +23,7 @@ require_once('db.php');
 
 <center>
     <div class="container p-3 m-3">
-        <form method="post">
+        <form method="post" enctype="multipart/form-data">
         <table>
             <tr>
                 <td><input type="text" name='name' placeholder="Enter Naat Name" class='form-control m-3'></td>
@@ -48,8 +48,11 @@ require_once('db.php');
 if(isset($_POST['insert_data'])){
     $name=$_POST['name'];
     $desc=$_POST['desc'];
-    $path=$_POST['path'];
-    $db->Insert($name,  $desc,$path );
+    // $path=$_POST['path'];
+    $file_name=$_FILES['path']['name'];
+    $tmp_name=$_FILES['path']['tmp_name'];
+    move_uploaded_file($tmp_name, "video/".$file_name);
+    $db->Insert($name,  $desc,$file_name);
     if($db){
         echo "<script>alert('Record Successfully added to weebsite!')</script>";
     }
